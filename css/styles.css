@@ -27,6 +27,8 @@ body {
     --cornflower-color: #E7E9FC;
 }
 
+
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -53,6 +55,7 @@ body {
 }
 
 .header-portfolio {
+    margin-bottom: 96px;
     background: var(--light-color);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -67,6 +70,7 @@ body {
     align-items: center;
     padding-left: 0;
     margin: 0 auto;
+    gap: 40px;
 }
   
 .header-logo {
@@ -91,13 +95,16 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-color);
     text-decoration: none;
-    padding: 24px 20px 24px 20px;
+    padding: 24px 0;
     display: block;
 }
 
 .header-contacts {
     display: flex;
     align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .header-mail {
@@ -106,7 +113,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--submain-color);
     text-decoration: none;
-    margin-right: 40px;
 }
 
 .header-phone {
@@ -212,6 +218,12 @@ body {
     gap: 24px;
     margin: 0 auto;
     padding-left: 0;
+    list-style-type: none;
+}
+
+.gallery-img {
+    display: block;
+    max-width: 100%;
 }
 
 /* _______ TEAM SECTION _______ */
@@ -219,13 +231,13 @@ body {
 .team-list {
     background: var(--cloud-color);
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-members {
     display: flex;
     align-items: flex-start;
     gap: 24px;
-    padding-bottom: 120px;
     margin: 0;
     padding-left: 0;
 }
@@ -345,7 +357,10 @@ body {
     display: flex; 
     justify-content: center;
     gap: 24px;
-    padding: 96px 0 72px 0;
+    margin-bottom: 72px;
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .btn-filter-al {
@@ -465,25 +480,22 @@ body {
     flex-wrap: wrap;
     row-gap: 24px;
     column-gap: 24px;
+    padding-left: 0;
+    margin: 0 auto;
 }
 
 .marketing-list .card {
-    flex-basis: calc(100% / 3 - 24px);
-    overflow: hidden; 
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    flex-basis: calc((100% - 3 *24px) / 3);
 }
 
 .card {
-    width: 360px;
-    gap: 24px;
     background: var(--light-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    font-weight: 500;
 }
 
 .marketing-card-text {
-    border: 0.5px var(--cloud-color);
+    border: 0.5px solid var(--cloud-color);
     padding: 32px 0 32px 16px;
+    border-top-width: 0px;
 }
 
 .marketing-link {
