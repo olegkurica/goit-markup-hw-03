@@ -27,7 +27,10 @@ body {
     --cornflower-color: #E7E9FC;
 }
 
-
+img {
+    display: block;
+    max-width: 100%;
+}
 
 .visually-hidden {
     position: absolute;
@@ -221,11 +224,6 @@ body {
     list-style-type: none;
 }
 
-.gallery-img {
-    display: block;
-    max-width: 100%;
-}
-
 /* _______ TEAM SECTION _______ */
 
 .team-list {
@@ -283,11 +281,6 @@ body {
     border-radius: 0px 0px 4px 4px;
     max-width: 264px;
     text-align: center;
-}
-
-.team-img {
-    display: block;
-    max-width: 100%;
 }
 
 .team-card-text {
@@ -488,10 +481,6 @@ body {
     flex-basis: calc((100% - 3 *24px) / 3);
 }
 
-.card {
-    background: var(--light-color);
-}
-
 .marketing-card-text {
     border: 0.5px solid var(--cloud-color);
     padding: 32px 0 32px 16px;
@@ -510,8 +499,4 @@ body {
 .marketing-name {
     margin-top: 0;
     margin-bottom: 8px;
-}
-
-.marketing-img {
-    display: block;
 }
